@@ -29,17 +29,17 @@ class _ButtonScreenState extends State<ButtonScreen> {
       body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white, backgroundColor: isPressed ? Colors.black : Colors.yellow, // لون النص داخل الزر
-            shadowColor: Colors.black54, // لون الظل
-            elevation: 10, // ارتفاع الظل
+            foregroundColor: Colors.white, backgroundColor: isPressed ? Colors.black : Colors.yellow,
+            shadowColor: Colors.black54,
+            elevation: 10,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20), // الحواف الناعمة
+              borderRadius: BorderRadius.circular(20),
             ),
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
           ),
           onPressed: () {
             setState(() {
-              isPressed = !isPressed; // تبديل الحالة عند الضغط
+              isPressed = !isPressed;
             });
           },
           child: Text(
